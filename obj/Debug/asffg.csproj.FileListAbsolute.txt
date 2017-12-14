@@ -1,0 +1,2 @@
+C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\obj\Debug\asffg.csprojResolveAssemblyReference.cache
+C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\obj\Debug\asffg.csproj.CoreCompileInputs.cache
