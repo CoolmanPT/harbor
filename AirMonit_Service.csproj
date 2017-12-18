@@ -94,6 +94,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Alarm.cs" />
+    <Compile Include="Models\WeekDay.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Hour.cs" />
     <Compile Include="Models\Parameter.cs" />

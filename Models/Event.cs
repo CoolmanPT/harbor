@@ -11,6 +11,7 @@ namespace AirMonit_Service.Models
         public string Eventh { get; set; }
         public float Temperature { get; set; }
         public string City { get; set; }
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
+        public string Time { get; set; }
     }
 }

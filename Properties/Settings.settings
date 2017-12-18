@@ -2,8 +2,13 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AirMonit_Service.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="conn" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\bruno\\source\\repos\\projeto_IS\\AirMonit_DLog\\AirMonitDB.mdf;Integrated Security=True;Connect Timeout=30</Value>
+    <Setting Name="connectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=3d4724a1-1e54-4849-b9a5-a84d0159abc3.sqlserver.sequelizer.com;Database=db3d4724a11e544849b9a5a84d0159abc3;User ID=ncijywimzsakyhaz;Password=h8cXMgDheBQaofAYZ3rDUDMqkMDyVYU4oV3tHsXzHnrDmuqXpkHd8DkLtUMaJftn;&lt;/ConnectionString&gt;
+  &lt;ProviderName /&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=3d4724a1-1e54-4849-b9a5-a84d0159abc3.sqlserver.sequelizer.com;Database=db3d4724a11e544849b9a5a84d0159abc3;User ID=ncijywimzsakyhaz;Password=h8cXMgDheBQaofAYZ3rDUDMqkMDyVYU4oV3tHsXzHnrDmuqXpkHd8DkLtUMaJftn;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

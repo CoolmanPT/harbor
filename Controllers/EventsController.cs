@@ -13,7 +13,7 @@ namespace AirMonit_Service.Controllers
     public class EventsController : ApiController
     {
         //DESKTOP
-         string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\bruno\\source\\repos\\projeto_IS\\AirMonit_DLog\\AirMonitDB.mdf;Integrated Security=True;Connect Timeout=30";
+         string connectionString = Properties.Settings.Default.connectionString;
 
         //LAPTOP
         //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\bruno\\Documents\\AirMonitDB.mdf;Integrated Security=True;Connect Timeout=30";
@@ -25,13 +25,14 @@ namespace AirMonit_Service.Controllers
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
-            string str = "Insert into Event values (@user_id, @event, @temperature, @city, @date)";
+            string str = "Insert into Event values (@user_id, @event, @temperature, @city, @date, @time)";
             SqlCommand cmd = new SqlCommand(str, conn);
             cmd.Parameters.AddWithValue("user_id", e.User_id);
             cmd.Parameters.AddWithValue("event", e.Eventh);
             cmd.Parameters.AddWithValue("temperature",e.Temperature);
             cmd.Parameters.AddWithValue("city", e.City);
             cmd.Parameters.AddWithValue("date", e.Date);
+            cmd.Parameters.AddWithValue("time", e.Time);
 
             int nRows = cmd.ExecuteNonQuery();
             conn.Close();
@@ -69,9 +70,10 @@ namespace AirMonit_Service.Controllers
                             string eventFromTable = objReader.GetString(objReader.GetOrdinal("event"));
                             float tempFromTable = (float) objReader.GetOrdinal("date");
                             string cityFromTable = objReader.GetString(objReader.GetOrdinal("city"));
-                            DateTime dateFromTable = objReader.GetDateTime(objReader.GetOrdinal("date"));
+                            string dateFromTable = objReader.GetString(objReader.GetOrdinal("date"));
+                            string timeFromTable = objReader.GetString(objReader.GetOrdinal("time"));
 
-                            lista.Add(new Event { User_id = user_idFromTable, Eventh = eventFromTable, Temperature = tempFromTable, City = cityFromTable, Date = dateFromTable});
+                            lista.Add(new Event { User_id = user_idFromTable, Eventh = eventFromTable, Temperature = tempFromTable, City = cityFromTable, Date = dateFromTable, Time = timeFromTable});
                         }
                     }
                 }

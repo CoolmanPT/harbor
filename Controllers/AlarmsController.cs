@@ -13,7 +13,7 @@ namespace AirMonit_Service.Controllers
     {
 
         //DESKTOP
-         string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\bruno\\source\\repos\\projeto_IS\\AirMonit_DLog\\AirMonitDB.mdf;Integrated Security=True;Connect Timeout=30";
+         string connectionString = Properties.Settings.Default.connectionString;
 
         //LAPTOP
         //string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\bruno\\Documents\\AirMonitDB.mdf;Integrated Security=True;Connect Timeout=30";

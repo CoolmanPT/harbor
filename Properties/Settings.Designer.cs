@@ -25,12 +25,13 @@ namespace AirMonit_Service.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\\\MSSQLLocalDB;AttachDbFilename=C:\\\\Users\\\\bruno\\\\source\\\\re" +
-            "pos\\\\projeto_IS\\\\AirMonit_DLog\\\\AirMonitDB.mdf;Integrated Security=True;Connect " +
-            "Timeout=30")]
-        public string conn {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=3d4724a1-1e54-4849-b9a5-a84d0159abc3.sqlserver.sequelizer.com;Database=db3" +
+            "d4724a11e544849b9a5a84d0159abc3;User ID=ncijywimzsakyhaz;Password=h8cXMgDheBQaof" +
+            "AYZ3rDUDMqkMDyVYU4oV3tHsXzHnrDmuqXpkHd8DkLtUMaJftn;")]
+        public string connectionString {
             get {
-                return ((string)(this["conn"]));
+                return ((string)(this["connectionString"]));
             }
         }
     }
