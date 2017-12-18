@@ -31,3 +31,4 @@ C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\bin\System.Net.Http.Form
 C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\bin\System.Web.Http.xml
 C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\bin\System.Web.Http.WebHost.xml
 C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\obj\Debug\AirMonit_Service.dll
+C:\Users\bruno\source\repos\projeto_IS\AirMonit_Service\obj\Debug\AirMonit_Service.csprojResolveAssemblyReference.cache
